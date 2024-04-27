@@ -1,0 +1,14 @@
+export const  FILE_SAVED_SUCCESSFULLY = "✅ File saved successfully";
+export const FILE_SAVED_ERROR = "Error saving file";
+export const FILE_OPEN_ERROR = "Error opening file";
+export const FILE_OPEN_SUCCESS = "File opened successfully";
+export const FILE_DELETE_SUCCESS = "File deleted successfully";
+export const FILE_DELETE_ERROR = "Error deleting file";
+export const FILE_RENAME_SUCCESS = "File renamed successfully";
+export const FILE_RENAME_ERROR = "Error renaming file";
+export const FILE_CREATE_SUCCESS = "File created successfully";
+export const FILE_CREATE_ERROR = "Error creating file";
+export const FILE_CLOSE_SUCCESS = "File closed successfully";
+export const FILE_CLOSE_ERROR = "Error closing file";
+export const OPEN_SIDEBAR = "⍈";
+export const CLOSE_SIDEBAR = "⍇";

@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-primary w-screen h-screen;
+}
+
+.bg-darken {
+  background-color: #222426;
+}
+
+.soure-item .source-codes {
+  @apply pl-4 relative;
+}
+
+.source-item-active {
+  @apply bg-blue-800 text-gray-300;
+}
+
+.soure-item .source-codes:before {
+  content: "";
+  @apply absolute top-0 bottom-0 border-l border-dotted border-stone-500;
+}
+
+.inp {
+  @apply block w-full rounded-md outline-none shadow-sm sm:text-sm bg-primary;
+  @apply text-gray-200;
+  @apply px-2 py-0.5;
+}
+
+#titlebar {
+  @apply flex items-center justify-between text-gray-300 pl-2;
+  background: #1c1c1c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.titlebar-actions {
+  @apply flex items-center;
+}
+
+.titlebar-icon {
+  @apply py-0.5 cursor-pointer;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  min-height: 30px;
+  min-width: 30px
+}
+
+.titlebar-icon:hover {
+  background-color: #383838;
+}
+
+#ttb-close:hover {
+  @apply bg-red-500 text-gray-100;
+}
+.minimize-icon:hover{
+  @apply bg-yellow-500 text-gray-100;
+}
+.maximize-icon:hover{
+  @apply bg-green-500 text-gray-100;
+}
+
+#editor {
+  padding-top: 27px;
+}
+
+.project-explorer {
+  @apply w-full text-left uppercase text-gray-400 text-xs;
+}
+
+.code-structure {
+  @apply px-2 overflow-y-auto;
+  height: calc(100vh - 70px);
+}
+
+/* Styles for scrollbar */
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222426;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #465056;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/solid/times-circle.svg) no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 0;
+  pointer-events: none;
+}
+
+input[type="search"]:focus::-webkit-search-cancel-button {
+  opacity: .3;
+  pointer-events: all;
+}
+
+input[type="search"].dark::-webkit-search-cancel-button {
+  filter: invert(1);
+}
+input[type="search"] {
+  border: 1px solid gray;
+  padding: .2em .4em;
+  border-radius: .2em;
+}
+::backdrop {
+  background-image: linear-gradient(
+    45deg,
+    magenta,
+    rebeccapurple,
+    dodgerblue,
+    green
+  );
+  opacity: 0.75;
+}
+.select-tag{
+  @apply bg-primary text-gray-200;
+  @apply px-2 py-0.5;
+  @apply rounded-md outline-none shadow-sm sm:text-sm;
+  height: 8px;
+  padding: 0;
+}
+.select-tag option{
+  @apply bg-primary text-gray-200;
+}
